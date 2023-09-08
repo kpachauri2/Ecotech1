@@ -2,10 +2,183 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Greenary</title>
+
+    <!-- font awesome cdn link -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css link -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
-    
+    <!--header section start  -->
+    <header>
+
+        <div id="menu-bar" class="fas fa-bars">
+            
+        </div>
+        <a href="#" class="logo"><span>T</span>raker</a>
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#book">About</a>
+            <a href="#packages">community</a>
+            <a href="#services">Learn More</a>
+          
+            <a href="#review">reward</a>
+            <a href="#contact">contact</a>
+            
+        </nav>
+
+        <div class="icons">
+            <i class="fas fa-search" id="search-btn"></i>
+            <i class="fas fa-user" id="login-btn"></i>
+        </div>
+
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="search here...">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+    </header>
+
+<!-- header section ends -->
+
+<!-- login form container -->
+
+<div class="login-form-container">
+
+    <i class="fas fa-times" id="form-close"></i>
+    <form action="">
+        <h3>login</h3>
+        <input type="email" class="box" placeholder="enter your email">
+        <input type="password" class="box" placeholder="enter your password">
+        <input type="submit" value="login now" class="btn">
+        <input type="checkbox" id="remember">
+        <label for="remember">remember me</label>
+        <p>forget password?<a href="#">click here</a></p>
+        <p>don't have any account? <a href="#">register now</a></p>
+    </form>
+</div>
+
+<!-- home section start -->
+
+<section class="home" id="home">
+ <div class="content">
+    <h3>Plantation is worthwhile</h3>
+    <p>Plant new trees with us,plantation  awaits</p>
+    <a href="#" class="btn">grow more</a>
+ </div>
+
+ <div class="container">
+<img src="/images/img1.jpg" alt=""> </div>
+</section>
+
+<!-- home section ends -->
+
+<!-- book section start -->
+
+<section class="book" id="book">
+    <h1 class="heading">
+        <span>P</span>
+        <span>l</span>
+        <span>a</span>
+        <span>n</span>
+        <span>t</span>
+        <span class="space"></span>
+        <span>m</span>
+        <span>o</span>
+        <span>r</span>
+        <span>e</span>
+    </h1>
+
+    <div class="row">
+        <div class="image">
+            <img src="images/tour4.jpg" alt="">
+        </div>
+        <form action="">
+            <div class="inputbox">
+                <h3>Plant Name</h3>
+                <input type="text" placeholder="plant name">
+            </div>
+            <div class="inputbox">
+                <h3>where to</h3>
+                <input type="text" placeholder="place name">
+            </div>
+            <div class="inputbox">
+                <h3>how many </h3>
+                <input type="number" placeholder="number of plants">
+            </div>
+           
+            
+
+            <input type="submit" class="btn" value="upload now">
+        </form>
+    </div>
+</section>
+
+
+
+<!-- footer section -->
+<section class="footer" id="footer">
+    <div class="box-container">
+        <div class="box">
+            <h3>Greenary Tracker</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, minima quas! Libero sequi ut
+                beatae.</p>
+            <div class="share">
+                <a href="https://www.facebook.com/" target="_blank" class="fa fa-facebook"></a>
+                <a href="https://twitter.com/?lang=en-in" target="_blank"  class="fa fa-twitter"></a>
+                <a href="https://www.instagram.com/" target="_blank"  class="fa fa-instagram"></a>
+                <a href="https://in.linkedin.com/"  class="fa fa-linkedin"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>Contact Info </h3>
+            <a href="#" class="links"> <i class="fa fa-phone"></i>+91 9876543210</a>
+            <a href="https://accounts.google.com/signup/v2/webcreateaccount?service=mail&continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fe-11-628304dc4ec026da01c13e68bd736-55b7b85bd32646f6aa67ae643d1a27f043f7b8ad&flowName=GlifWebSignIn&flowEntry=SignUp" target="_blank" class="links"><i class="fa fa-envelope"></i>greenarytracker@gmail.com</a>
+            <a href="https://goo.gl/maps/Ut8rf6DR1UqiuJb87" target="_blank" class="links"><i class="fa fa-map-marker"></i>Shivpuri,India</a>
+        </div>
+
+
+        <div class="box">
+            <h3>Quick Links </h3>
+            <a href="#home" class="links"><i class="fa fa-arrow-right">Home</i></a>
+            <a href="#features" class="links"><i class="fa fa-arrow-right">About</i></a>
+            <a href="#products" class="links"><i class="fa fa-arrow-right">Community</i></a>
+            <a href="#categories" class="links"><i class="fa fa-arrow-right">Learn More</i></a>
+            <a href="#categories" class="links"><i class="fa fa-arrow-right">Reward</i></a>
+            <a href="#categories" class="links"><i class="fa fa-arrow-right">Contact</i></a>
+
+        </div>
+
+
+        <div class="box">
+            <h3>Newsletter </h3>
+            <p>Subscribe For Latest Updates</p>
+            <input type="email" placeholder="your email" class="email">
+            <input type="submit" value="Subscribe" class="btn">
+        </div>
+
+
+    </div>
+
+    <div class="credit">copyright &copy; <a href="#home">www.greenarytracker.com</a> | All Rights Reserved </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+    <!-- custom js file link -->
+    <script src="js/script.js"></script>
 </body>
 </html>
