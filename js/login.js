@@ -1,15 +1,4 @@
-// function onSignIn(googleUser) {
-//     // Get user information
-//     var profile = googleUser.getBasicProfile();
-//     console.log("ID: " + profile.getId()); // User ID
-//     console.log("Name: " + profile.getName()); // User's name
-//     console.log("Email: " + profile.getEmail()); // User's email
 
-//     // You can use the user information to perform actions like registration or login.
-
-//     // Example: Redirect to a welcome page after successful sign-in
-//     window.location.href = "welcome.html";
-// }
 
 function onSignIn(googleUser) {
     // Handle Google Sign-In (use the onSignIn function from previous code)

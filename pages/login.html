@@ -8,6 +8,7 @@
     <!--Google+api for sign in -->
     <script src="https://apis.google.com/js/platform.js" async defer></script>
     
+    <!-- <meta name="google-signin-client_id" content="349036709863-k9cl57hm4on3ro8867b0vk3ov7kd2a67.apps.googleusercontent.com"> -->
     <meta name="google-signin-client_id" content="69600531929-vndg6sbug36vrl9iia24rgmg7c4icsjv.apps.googleusercontent.com">
 
     <!-- font awesome cdn link -->
@@ -23,7 +24,7 @@
     <!--header section start  -->
     <header>
 
-        <div id="menu-bar" class="fas fa-bars">
+         <div id="menu-bar" class="fas fa-bars">
             
         </div>
         <a href="#" class="logo"><span>T</span>racker</a>
@@ -47,7 +48,7 @@
             <input type="search" id="search-bar" placeholder="search here...">
             <label for="search-bar" class="fas fa-search"></label>
         </form>
-    </header>
+    </header> 
 
 <!-- header section ends -->
 
@@ -57,7 +58,7 @@
         <div class="login-form-container">
             <i class="fas fa-times" id="form-close"></i>
             <form id="login-form">
-                <h3>Login</h3>
+                <h3>Login</h3> 
                 <input type="email" class="box" placeholder="Enter your email">
                 <input type="password" class="box" placeholder="Enter your password">
                 <input type="submit" value="Login Now" class="btn">
@@ -67,15 +68,15 @@
                 <p>Don't have an account? <a href="#">Register now</a></p>
             </form>
 
-            <!-- Google Sign-In Button -->
-            <div class="google-signin-container">
+            Google Sign-In Button 
+             <div class="google-signin-container">
                 <div class="g-signin2" data-onsuccess="onSignIn"></div>
             </div>
         </div>
-    </section>
-
+    </section>  
 
     <div class="g-signin2" data-onsuccess="onSignIn"></div>
+
 
     
 
@@ -145,6 +146,7 @@
     });
   });
 </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 
 </body>
 </html>
