@@ -425,6 +425,8 @@ background: #222;
 
 .footer {
     background: #fff;
+   
+   
 }
 
 .footer .box-container {
@@ -516,6 +518,7 @@ background: #222;
 .footer .credit span {
     color: green;
 }
+
 
 
 @media(max-width:991px) {
