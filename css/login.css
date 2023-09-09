@@ -1,0 +1,10 @@
+/* Style for Google Sign-In button */
+.g-signin2 {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #444;
+    font-size: 14px;
+    margin: 10px 0;
+    padding: 10px 20px;
+}

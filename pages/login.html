@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Sign-up on Greenary</title>
+    <!--Google+api for sign in -->
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    
+    <meta name="google-signin-client_id" content="69600531929-vndg6sbug36vrl9iia24rgmg7c4icsjv.apps.googleusercontent.com">
+
+    <!-- font awesome cdn link -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css link -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <!--header section start  -->
+    <header>
+
+        <div id="menu-bar" class="fas fa-bars">
+            
+        </div>
+        <a href="#" class="logo"><span>T</span>racker</a>
+        <nav class="navbar">
+            <a href="initial.html">home</a>
+            <a href="about.html">About</a>
+            <a href="Community.html">community</a>
+            <a href="#review">reward</a>
+            <a href="/pages/contact.html">contact</a>
+            
+            
+        </nav>
+
+        <div class="icons">
+            <a href="contribute.html" class="btn" id="btn-nav">Contribute+</a>
+            <i class="fas fa-search" id="search-btn" style="margin-left: 0.5rem;"></i>
+            <i class="fas fa-user" id="login-btn"></i>
+        </div>
+
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="search here...">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+    </header>
+
+<!-- header section ends -->
+
+
+    <!-- Login form section -->
+    <section class="login-section">
+        <div class="login-form-container">
+            <i class="fas fa-times" id="form-close"></i>
+            <form id="login-form">
+                <h3>Login</h3>
+                <input type="email" class="box" placeholder="Enter your email">
+                <input type="password" class="box" placeholder="Enter your password">
+                <input type="submit" value="Login Now" class="btn">
+                <input type="checkbox" id="remember">
+                <label for="remember">Remember me</label>
+                <p>Forgot password? <a href="#">Click here</a></p>
+                <p>Don't have an account? <a href="#">Register now</a></p>
+            </form>
+
+            <!-- Google Sign-In Button -->
+            <div class="google-signin-container">
+                <div class="g-signin2" data-onsuccess="onSignIn"></div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="g-signin2" data-onsuccess="onSignIn"></div>
+
+    
+
+
+
+
+<!-- footer section -->
+<section class="footer" id="footer">
+    <div class="box-container">
+        <div class="box">
+            <h3>Greenary Tracker</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, minima quas! Libero sequi ut
+                beatae.</p>
+            <div class="share">
+                <a href="https://www.facebook.com/" target="_blank" class="fa fa-facebook"></a>
+                <a href="https://twitter.com/?lang=en-in" target="_blank"  class="fa fa-twitter"></a>
+                <a href="https://www.instagram.com/" target="_blank"  class="fa fa-instagram"></a>
+                <a href="https://in.linkedin.com/"  class="fa fa-linkedin"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>Contact Info </h3>
+            <a href="#" class="links"> <i class="fa fa-phone"></i>+91 9876543210</a>
+            <a href="https://accounts.google.com/signup/v2/webcreateaccount?service=mail&continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fe-11-628304dc4ec026da01c13e68bd736-55b7b85bd32646f6aa67ae643d1a27f043f7b8ad&flowName=GlifWebSignIn&flowEntry=SignUp" target="_blank" class="links"><i class="fa fa-envelope"></i>greenarytracker@gmail.com</a>
+            <a href="https://goo.gl/maps/Ut8rf6DR1UqiuJb87" target="_blank" class="links"><i class="fa fa-map-marker"></i>Shivpuri,India</a>
+        </div>
+
+
+        <div class="box">
+            <h3>Quick Links </h3>
+            <a href="#home" class="links"><i class="fa fa-arrow-right">Home</i></a>
+            <a href="#features" class="links"><i class="fa fa-arrow-right">About</i></a>
+            <a href="#products" class="links"><i class="fa fa-arrow-right">Community</i></a>
+            <a href="#categories" class="links"><i class="fa fa-arrow-right">Learn More</i></a>
+            <a href="#categories" class="links"><i class="fa fa-arrow-right">Reward</i></a>
+            <a href="#categories" class="links"><i class="fa fa-arrow-right">Contact</i></a>
+
+        </div>
+
+
+        <div class="box">
+            <h3>Newsletter </h3>
+            <p>Subscribe For Latest Updates</p>
+            <input type="email" placeholder="your email" class="email">
+            <input type="submit" value="Subscribe" class="btn">
+        </div>
+
+
+    </div>
+
+    <div class="credit">copyright &copy; <a href="#home">www.greenarytracker.com</a> | All Rights Reserved </div>
+</section>
+
+    <!-- custom js file link -->
+    <script src="/js/login.js"></script>
+    <script src="https://apis.google.com/js/platform.js"></script>
+<script>
+  // Initialize Google Sign-In with your client ID and the correct origin/redirect URI.
+  gapi.load('auth2', function () {
+    gapi.auth2.init({
+      client_id: 'YOUR_CLIENT_ID',
+      // Replace with the correct origin for your development environment.
+      hosted_domain: 'http://127.0.0.1:5500',
+      // Replace with the correct redirect URI you registered in the Google Cloud Console.
+      redirect_uri: 'http://127.0.0.1:5500/pages/initial.html',
+    });
+  });
+</script>
+
+</body>
+</html>
+
